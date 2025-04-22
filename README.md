@@ -2,5 +2,5 @@
 
 <img src="https://raw.githubusercontent.com/Sarani-NS/That-Platypus.io/main/img/Plattu_logo.png" alt="Plattu Logo">
 
-<p>Here, you can find cooking, platypuses and bioinformatics-related contents. </p>
+<p>Here, you can find my resume as a bioinformatician, along with projects I've done. </p>
 
