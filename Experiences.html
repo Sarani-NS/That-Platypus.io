@@ -17,6 +17,39 @@
     <!-- Custom CSS -->
     <link href="css/clean-blog.min.css" rel="stylesheet">
 
+    <style>
+        .dynamic-image-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .dynamic-image-container img {
+            transition: transform 0.3s ease-in-out;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+        }
+
+        .dynamic-image-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .image-caption {
+            font-size: 0.9em;
+            color: #555;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .image-caption a {
+            color: #FF0000;
+            text-decoration: none;
+        }
+
+        .image-caption a:hover {
+            color: #738276;
+        }
+    </style>
+
     <!-- Custom Fonts -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
     <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
