@@ -1,29 +1,35 @@
-/* Transparent navbar at the top */
-.navbar-default {
-    background-color: transparent;
-    border: none;
+/* 1) Keep the top bar transparent on all sizes */
+.navbar.navbar-custom {
+  background: transparent !important;
+  border: 0;
 }
 
-/* White text + burger bars */
-.navbar-default .navbar-nav > li > a,
-.navbar-default .navbar-brand {
-    color: white;
+/* White brand + links on large screens (over your banner) */
+@media (min-width: 768px) {
+  .navbar.navbar-custom .navbar-brand,
+  .navbar.navbar-custom .navbar-nav > li > a {
+    color: #fff !important;
+  }
 }
 
-.navbar-default .navbar-toggle .icon-bar {
-    background-color: white;
+/* White hamburger (3 bars) */
+.navbar.navbar-custom .navbar-toggle .icon-bar {
+  background-color: #fff !important;
+}
+.navbar.navbar-custom .navbar-toggle {
+  border-color: transparent !important;
 }
 
-.navbar-default .navbar-toggle {
-    border-color: transparent;
-}
+/* 2) When the menu is expanded on mobile, give the PANEL a white bg */
+@media (max-width: 767px) {
+  /* cover both states: animating (.collapsing) and open (.in) */
+  .navbar.navbar-custom .navbar-collapse.collapsing,
+  .navbar.navbar-custom .navbar-collapse.collapse.in {
+    background: #fff !important;          /* use background, not only background-color */
+  }
 
-/* When collapsed menu expands (mobile) → give it a white background */
-.navbar-default .navbar-collapse {
-    background-color: white;
-}
-
-/* Links inside collapsed menu should be dark (for readability) */
-.navbar-default .navbar-collapse .navbar-nav > li > a {
-    color: black;
+  /* Links inside the expanded panel should be dark */
+  .navbar.navbar-custom .navbar-collapse .navbar-nav > li > a {
+    color: #000 !important;
+  }
 }
