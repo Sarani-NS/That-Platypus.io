@@ -1,0 +1,17 @@
+/* Navbar overrides */
+.navbar-default {
+    background-color: transparent;
+    border: none;
+}
+
+.navbar-default .navbar-collapse {
+    background-color: transparent;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+}
