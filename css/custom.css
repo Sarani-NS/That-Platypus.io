@@ -1,11 +1,13 @@
-/* Navbar overrides */
+/* Transparent navbar at the top */
 .navbar-default {
     background-color: transparent;
     border: none;
 }
 
-.navbar-default .navbar-collapse {
-    background-color: transparent;
+/* White text + burger bars */
+.navbar-default .navbar-nav > li > a,
+.navbar-default .navbar-brand {
+    color: white;
 }
 
 .navbar-default .navbar-toggle .icon-bar {
@@ -14,4 +16,14 @@
 
 .navbar-default .navbar-toggle {
     border-color: transparent;
+}
+
+/* When collapsed menu expands (mobile) → give it a white background */
+.navbar-default .navbar-collapse {
+    background-color: white;
+}
+
+/* Links inside collapsed menu should be dark (for readability) */
+.navbar-default .navbar-collapse .navbar-nav > li > a {
+    color: black;
 }
